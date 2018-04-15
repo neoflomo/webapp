@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+<input matInput [(ngModel)]="nameSchulung" placeholder="Name der Schulung" />
+<input matInput type="date" [(ngModel)]="datum" placeholder="datum" />
+<input matInput [(ngModel)]="ort" placeholder="Ort" />
+<input matInput type="number" [(ngModel)]="kosten" placeholder="kosten" />€
+<br>
+<button mat-raised-button color="primary" (click)="save()">Speichern</button>
+
+<mat-list role="list">
+  <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">{{ schulung.datum }} - {{ schulung.name }} - {{ schulung.ort }} - {{ schulung.kosten }}€</mat-list-item>
+</mat-list>
+
+<router-outlet></router-outlet>
