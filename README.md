@@ -18,6 +18,17 @@ Es soll möglich sein...
 
 
 
-wie damit arbeiten, Installationshinweise:
+wie wir damit arbeiten, Installationshinweise:
 - beim Erstellen habe ich Visual Studio Code verwendet: https://code.visualstudio.com/
 - dazu habe ich NODE JS in der aktuellen Version (9.11.1) installiert: https://nodejs.org/en/
+- Entwicklungsbrowser ist Chrome
+
+Stand 16.04.2018:
+Es ist ein Dummy Formular vorhanden in dem Daten eingetragen werden, es ist jedoch noch nicht möglich diese zu speichern.
+
+
+
+ToDo's:
+- Datenbank API erstellen um Daten aufzunehmen und zu liefern
+- Login erstellen
+- Berechtigungskonzept
