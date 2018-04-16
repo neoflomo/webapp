@@ -8,7 +8,8 @@ import { DatabaseApiService, SchulungsDaten } from './database-api.service';
 })
 export class AppComponent implements OnInit {
   
-  title = 'App2';
+  title = 'Schulungsverzeichnis';
+  organisation ='Verbandsgemeindeverwaltung Asbach';
   nameSchulung = '';
   datum_von = '';
   datum_bis = '';
