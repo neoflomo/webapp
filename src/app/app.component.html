@@ -42,13 +42,15 @@
 </div>
 <br>
 
-<input matInput type="date" [(ngModel)]="datum" placeholder="datum" />
-<br>
-<input matInput [(ngModel)]="ort" placeholder="Ort" />
-<br>
-<input matInput type="number" [(ngModel)]="kosten" placeholder="kosten" />€
-<br>
 <button mat-raised-button color="primary" (click)="save()">Speichern</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h5 align="left">Hier werden die bisherigen Eintraege des Nutzers angezeigt</h5>
 
 <mat-list role="list">
   <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">{{ schulung.datum_von }} - {{ schulung.datum_bis }} - {{ schulung.name }} - {{ schulung.ort }} - {{ schulung.kosten }}€</mat-list-item>
