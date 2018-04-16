@@ -5,8 +5,11 @@
   </h1>
 
 <input matInput [(ngModel)]="nameSchulung" placeholder="Name der Schulung" />
+<br>
 <input matInput type="date" [(ngModel)]="datum" placeholder="datum" />
+<br>
 <input matInput [(ngModel)]="ort" placeholder="Ort" />
+<br>
 <input matInput type="number" [(ngModel)]="kosten" placeholder="kosten" />€
 <br>
 <button mat-raised-button color="primary" (click)="save()">Speichern</button>
