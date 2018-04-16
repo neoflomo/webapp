@@ -21,6 +21,7 @@ Es soll möglich sein...
 wie wir damit arbeiten, Installationshinweise:
 - beim Erstellen habe ich Visual Studio Code verwendet: https://code.visualstudio.com/
 - dazu habe ich NODE JS in der aktuellen Version (9.11.1) installiert: https://nodejs.org/en/
+- für die Zusammenarbeit über GitHub muss noch folgendes installiert werden: https://git-scm.com/
 - Entwicklungsbrowser ist Chrome
 
 Stand 16.04.2018:
