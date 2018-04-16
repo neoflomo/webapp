@@ -14,3 +14,10 @@ Es soll möglich sein...
 - Daten über den Browser zu löschen
 - sich einzuloggen
 - verschiedene Berechtigungen anhand des Users zu haben
+
+
+
+
+wie damit arbeiten, Installationshinweise:
+- beim Erstellen habe ich Visual Studio Code verwendet: https://code.visualstudio.com/
+- dazu habe ich NODE JS in der aktuellen Version (9.11.1) installiert: https://nodejs.org/en/
