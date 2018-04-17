@@ -33,6 +33,19 @@ export class AppComponent implements OnInit {
       
     });
   } 
+  
+  lul() {
+         
+       while (input != "BvB"){
+           var input=prompt("BvB oder S04?");
+           if (input=="BvB"){
+           alert("jup!");
+           }
+           else{
+           alert("nö!");}
+           }
+  }
+ 
 }
 
 

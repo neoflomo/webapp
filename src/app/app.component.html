@@ -43,7 +43,7 @@
 <br>
 
 <button mat-raised-button color="primary" (click)="save()">Speichern</button>
-
+<button mat-raised-button color="primary" (click)="lul()">Okay!</button>
 <br>
 <br>
 <br>
@@ -54,10 +54,7 @@
 
 <mat-list role="list">
   <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">
-    
-    {{ schulung.datum_von }} - {{ schulung.datum_bis }} 
-    <br>
-    {{ schulung.name }} - {{ schulung.ort }} - {{ schulung.kosten }}€</mat-list-item>
+    {{ schulung.datum_von }} - {{ schulung.datum_bis }} - {{ schulung.name }} - {{ schulung.ort }} - {{ schulung.kosten }}€</mat-list-item>
 </mat-list>
 
 <router-outlet></router-outlet>

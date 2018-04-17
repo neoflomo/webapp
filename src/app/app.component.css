@@ -21,12 +21,9 @@ table, th, td {
     text-align: center;
 }
 
-label {
+div {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
     
-    float: left;
-    margin-right:15px;
 }
 
 .form {
