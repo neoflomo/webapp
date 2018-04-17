@@ -8,9 +8,11 @@ import { DatabaseApiService, SchulungsDaten } from './database-api.service';
 })
 export class AppComponent implements OnInit {
   
-  title = 'App2';
+  title = 'Schulungsverzeichnis';
+  organisation ='Verbandsgemeindeverwaltung Asbach';
   nameSchulung = '';
-  datum = '';
+  datum_von = '';
+  datum_bis = '';
   ort = '';
   kosten = 0;
   schulungsdatenListe: SchulungsDaten[] = [];
@@ -26,8 +28,8 @@ export class AppComponent implements OnInit {
 
 
   save() {
-    console.log({name: this.nameSchulung, datum: this.datum, ort: this.ort, kosten: this.kosten});
-    this.dbService.saveSchulungseintrag({name: this.nameSchulung, datum: this.datum, ort: this.ort, kosten: this.kosten}).subscribe(result => {
+    console.log({name: this.nameSchulung, datum_von: this.datum_von, datum_bis: this.datum_bis, ort: this.ort, kosten: this.kosten});
+    this.dbService.saveSchulungseintrag({name: this.nameSchulung, datum_von: this.datum_von, datum_bis: this.datum_bis, ort: this.ort, kosten: this.kosten}).subscribe(result => {
       
     });
   } 
