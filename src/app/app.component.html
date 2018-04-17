@@ -1,79 +1,59 @@
+
 <div style="text-align:center">
   <h1>
-    Willkommen zur {{ title }}
+    Willkommen zum {{ title }}
   </h1>
-  <h5>
-    der Verbandsgemeindeverwaltung Asbach!
-  </h5>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <h3>
+    der {{ organisation }}!
+  </h3>
 
 
-
-  <label>Schulung:</label>
-  <div align="center">
-  <input matInput [(ngModel)]="nameSchulung" placeholder="Name der Schulung" align="center" />
+<div align="left">
+    <a>Name der Schulung</a>
+  <input matInput [(ngModel)]="nameSchulung" placeholder="Name der Schulung" />
 </div>
 <br>
 
-<label>Geben Sie das Datum ein:</label>
-<div align="center">
-  <input matInput type="date" [(ngModel)]="datum" placeholder="datum" />
+
+<div align="left">
+    <a>Datum von</a>
+  <input matInput type="date" [(ngModel)]="datum_von" placeholder="datum_von" />
 </div>
 <br>
-<label>Geben Sie den Ort ein:</label>
-<div align="center">
-  <input matInput [(ngModel)]="ort" placeholder="Ort" />
+
+
+<div align="left">
+    <a>Datum bis</a>
+  <input matInput type="date" [(ngModel)]="datum_bis" placeholder="datum_bis" />
 </div>
 <br>
-<label>Geben Sie die Schulungskosten ein:</label>
-<div align="center">
-  <input matInput type="number" [(ngModel)]="kosten" placeholder="1000" />€
+
+
+<div align="left">
+    <a>Ort der Schulung</a>
+  <input matInput [(ngModel)]="ort" placeholder="ort" />
 </div>
 <br>
+
+
+<div align="left">
+    <a>Kosten</a>
+  <input matInput [(ngModel)]="kosten" placeholder="kosten" />
+</div>
+<br>
+
 <button mat-raised-button color="primary" (click)="save()">Speichern</button>
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h2>Eingetragene Schulungen:</h2>
+<h5 align="left">Hier werden die bisherigen Eintraege des Nutzers angezeigt</h5>
 
-<mat-list role="list" align="left">
-  <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">
-    <table style="width:100%">
-      <tr>
-        <th>
-          Schulungsdatum
-        </th>
-        <th>
-          Schulungsname
-        </th>
-        <th>
-          Ort
-        </th>
-        <th>
-          Kosten
-        </th>
-      </tr>
-      <tr>
-        <td>{{ schulung.datum }}</td>
-        <td>{{ schulung.name }}</td>
-        <td>{{ schulung.ort }}</td>
-        <td>{{ schulung.kosten }}</td>
-      </tr>
-    </table>
-  </mat-list-item>
-
-  <!--       {{ schulung.datum }} <br> {{ schulung.name }} <br> {{ schulung.ort }} <br> {{ schulung.kosten }}€
- -->
+<mat-list role="list">
+  <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">{{ schulung.datum_von }} - {{ schulung.datum_bis }} - {{ schulung.name }} - {{ schulung.ort }} - {{ schulung.kosten }}€</mat-list-item>
 </mat-list>
 
 <router-outlet></router-outlet>
