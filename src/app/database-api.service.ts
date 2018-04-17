@@ -38,7 +38,7 @@ export class DatabaseApiService {
     // });
     return new Observable<SchulungsDaten[]>(obs => {
       setTimeout(() => {
-        obs.next([{ name: 'Hello Flo', ort: 'St. Katharinen', kosten: 25, datum: '2018-04-19' }]);
+        obs.next([{ name: 'Hello Flo', ort: 'St. Katharinen', kosten: 25, datum_von: '2018-04-19', datum_bis: '2018-04-21' }]);
         obs.complete();
       }, 1000);
     });
@@ -47,7 +47,10 @@ export class DatabaseApiService {
 
 export interface SchulungsDaten {
   name: string;
+  datum_von: string;
+  datum_bis: string;
   ort: string;
   kosten: number;
-  datum: string;
+
+
 }
