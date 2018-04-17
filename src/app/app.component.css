@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 45px;
+    
+}
+
+div {
+   font-family: Arial, Helvetica, sans-serif;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+
+table, th, td {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: blue;
+    border-block-end-width: 10px;
+    border-style: double;
+    text-align: center;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    
+    float: left;
+    margin-right:15px;
+}

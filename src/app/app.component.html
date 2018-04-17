@@ -1,26 +1,79 @@
-
 <div style="text-align:center">
   <h1>
     Willkommen zur {{ title }}
   </h1>
-  <h3>
+  <h5>
     der Verbandsgemeindeverwaltung Asbach!
-  </h3>
+  </h5>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-  <div align="left">
-    <input matInput [(ngModel)]="nameSchulung" placeholder="Name der Schulung" />
-  </div>
+
+
+  <label>Schulung:</label>
+  <div align="center">
+  <input matInput [(ngModel)]="nameSchulung" placeholder="Name der Schulung" align="center" />
+</div>
 <br>
-<input matInput type="date" [(ngModel)]="datum" placeholder="datum" />
+
+<label>Geben Sie das Datum ein:</label>
+<div align="center">
+  <input matInput type="date" [(ngModel)]="datum" placeholder="datum" />
+</div>
 <br>
-<input matInput [(ngModel)]="ort" placeholder="Ort" />
+<label>Geben Sie den Ort ein:</label>
+<div align="center">
+  <input matInput [(ngModel)]="ort" placeholder="Ort" />
+</div>
 <br>
-<input matInput type="number" [(ngModel)]="kosten" placeholder="kosten" />€
+<label>Geben Sie die Schulungskosten ein:</label>
+<div align="center">
+  <input matInput type="number" [(ngModel)]="kosten" placeholder="1000" />€
+</div>
 <br>
 <button mat-raised-button color="primary" (click)="save()">Speichern</button>
 
-<mat-list role="list">
-  <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">{{ schulung.datum }} - {{ schulung.name }} - {{ schulung.ort }} - {{ schulung.kosten }}€</mat-list-item>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>Eingetragene Schulungen:</h2>
+
+<mat-list role="list" align="left">
+  <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">
+    <table style="width:100%">
+      <tr>
+        <th>
+          Schulungsdatum
+        </th>
+        <th>
+          Schulungsname
+        </th>
+        <th>
+          Ort
+        </th>
+        <th>
+          Kosten
+        </th>
+      </tr>
+      <tr>
+        <td>{{ schulung.datum }}</td>
+        <td>{{ schulung.name }}</td>
+        <td>{{ schulung.ort }}</td>
+        <td>{{ schulung.kosten }}</td>
+      </tr>
+    </table>
+  </mat-list-item>
+
+  <!--       {{ schulung.datum }} <br> {{ schulung.name }} <br> {{ schulung.ort }} <br> {{ schulung.kosten }}€
+ -->
 </mat-list>
 
 <router-outlet></router-outlet>
