@@ -6,7 +6,12 @@
   <h3>
     der {{ organisation }}!
   </h3>
+  --------------------------------------------------
 
+
+<!-- INPUTS -->
+
+<!-- <div ng-app="myapp" ng-controller="dbcontroller"> -->
 <h1>Test</h1>
 <div align="left">
     <a>Name der Schulung</a>
@@ -49,24 +54,43 @@
 <br>
 <br>
 
+
+<!-- save() in Datenbank ablegen -->
+<!-- <script>
+  var app = angular.module('myapp',[]);
+  app.controller('dbcontroller',function($scope,$http){
+    $scope.insertdata=function(){
+      $http.post("/database/server.php",{'nameSchulung':$scope.nameSchulung,'datum_von':$scope.datum_von,
+      'datum_bis':$scope.datum_bis,'ort':$scope.ort,'kosten':$scope.kosten})
+      .success(function(data,status,headers,config){
+        console.log("data inserted successfully");
+      });
+    }
+  });
+</script>
+
+</div> --> 
+
+
+
 <h5 align="left">Hier werden die bisherigen Eintraege des Nutzers angezeigt</h5>
 
 <mat-list role="list">
   <mat-list-item *ngFor="let schulung of schulungsdatenListe" role="listitem">
     <table>
-      <th>
+      <thead>
         <tr>
-          <td>
+          <th>
             Datum
-          </td>
-          <td>name
-          </td>
-          <td>ort
-          </td>
-          <td>Kosten
-          </td>
+          </th>
+          <th>Name
+          </th>
+          <th>Ort
+          </th>
+          <th>Kosten
+          </th>
         </tr>
-      </th>
+      </thead>
         <tr>
           <td>{{ schulung.datum_von }} - {{ schulung.datum_bis }}</td>
           <td>{{ schulung.name }}</td>

@@ -11,14 +11,9 @@ div {
 }
 
 
-table, th, td {
+table, td, th {
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid black;
-    border-collapse: collapse;
-    border-color: blue;
-    border-block-end-width: 10px;
-    border-style: double;
-    text-align: center;
     
 }
 
