@@ -9,5 +9,4 @@ mysql_connect("localhost","user","pw");
 mysql_select_db("DATENBANKNAME");
 mysql_query("INSERT INTO tabellenname('nameSchulung','datum_von','datum_bis','ort','kosten',)
 VALUES('".$nameSchulung"','".$datum_von"','".$datum_bis"','".$ort"','".$kosten"',)");
-
 ?>
